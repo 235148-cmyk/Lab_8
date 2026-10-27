@@ -1,0 +1,14 @@
+Data Science Lab — Lab 08
+Task 3: Interactive Dashboard
+
+1.	What changed in the customer table when the relationship direction was Both?
+With Single filter direction, all four customers (Ali Khan, Sara, Ahmed, and Hina) were displayed when Laptop was selected. With Both filter direction, only Ali Khan remained because the filter travelled from Products to Sales and then back to Customers.
+
+2.	Which customer has no orders?
+Hina (CustomerID C04) has no orders.
+
+3.	Which product was never sold?
+Monitor was never sold. It exists in the Products table but has no matching sales record.
+
+4.	Why does Computers Sales show 900 on the Accessories row?
+The Computers Sales measure uses CALCULATE with the filter Products[Category] = "Computers". CALCULATE replaces the existing category filter with the Computers filter, so the measure returns 900 even when evaluated on the Accessories row.
